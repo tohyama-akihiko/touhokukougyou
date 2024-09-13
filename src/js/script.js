@@ -47,4 +47,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  $(function () {
+    $(".slider").slick({
+      autoplay: true,
+      fade: true,
+    });
+  });
+  
+  var rellax = new Rellax(".js-rellax");
 });

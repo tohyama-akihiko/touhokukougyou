@@ -1,0 +1,99 @@
+@use "global" as *;
+.pc-none{
+  display: block;
+  @include mq('md') {
+    display: none;
+  }
+  }
+  .sp-none{
+    display: none;
+    @include mq('md') {
+      display: block;
+    }
+  }
+
+.button{
+  position: relative;
+  
+}
+.button__link::before{
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 17%;
+  width: 22px;
+  height: 22px;
+  background:url(../images/top/arrow01.svg) no-repeat center center /contain;
+  border-radius: 8px;
+  transition: 0.3s;
+  
+}
+
+.hero-button__link {
+ background-color: $navy;
+ border-radius: 8px;
+ color: #fff;
+ font-size: rem(16);
+ font-weight: 500;
+ display: block;
+ padding: rem(16) rem(32);
+ letter-spacing: 0.8px;
+ position: relative;
+ max-width: rem(167);
+ text-align: center;
+ transition: all 0.3s;
+ &:hover{
+    color:$navy;
+    background-color: #fff;
+    border: 1px solid $navy;
+ }
+}
+.button__link {
+ background-color: $navy;
+ max-width: rem(200);
+ border-radius: 8px;
+ color: #fff;
+ font-size: rem(16);
+ font-weight: 500;
+ display: block;
+ padding: rem(16) 0 rem(16) rem(36);
+ letter-spacing: 0.8px;
+ position: relative;
+ transition: all 0.3s;
+ &:hover{
+  color:$navy;
+  background-color: #fff;
+  border: 1px solid $navy;
+  &::before{
+    right: 13%;
+}
+}
+}
+.section-title {
+  font-family:$second-font-family;
+  font-size: rem(56);
+  font-weight: 500;
+  letter-spacing: 6.1px;
+  display: block;
+  color: #242424;
+}
+
+.section__subtitle {
+  font-size: rem(14);
+  font-weight: 700;
+  display: block;
+  color: $red;
+}
+
+.slick-arrow{
+  display: none !important;
+}
+
+.box-page01 {
+  left: -1%;
+  margin: 0 auto;
+  position: absolute;
+  top: 16%;
+  width: 20%;
+}
+

@@ -6,10 +6,11 @@ html {
   @media (max-width: 375px) {
     font-size: vw(375, 16);
   }
-
-  //375px~787px
-  font-size: 16px;
-
+  
+  & {
+    font-size: 16px;
+  }
+  
   @include mq("md") {
     font-size: vw(strip-unit($inner), 16);
   }

@@ -1,0 +1,113 @@
+@use "global" as *;
+.footer {
+  background-color: #dee4fffe;
+  width: 100%;
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  padding-bottom: rem(32);
+  border-bottom: 1px solid $navy;
+  justify-content: space-between;
+  max-width: rem(1140);
+}
+.footer__logo {
+  max-width: rem(320);
+}
+.footer__nav {
+  display: flex;
+}
+.footer__nav-01 {
+  max-width: rem(190);
+  width: 100%;
+  
+}
+.footer__nav-item {
+  position: relative; //styleName: 東北_PC文;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #242424;
+  margin-top: 8%;
+  display: block;
+  max-width: rem(190);
+  width: rem(190);
+}
+.footer__nav-item::before {
+  position: absolute;
+  content: "";
+  top: 28%;
+  left: rem(-20);
+  width: rem(20);
+  height: rem(20);
+  background: url(../images/common/right_line.svg) no-repeat center center /
+    contain;
+}
+
+.footer__nav-02 {
+  max-width: rem(190);
+  width: 100%;
+  
+}
+.footer__nav03 {
+  max-width: rem(190);
+  width: 100%;
+  
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  padding-top: rem(32);
+  padding-bottom: rem(72);
+  gap: rem(61);
+}
+.footer__address {
+  font-style: normal;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.footer__contacts {
+}
+.footer__fax {
+  font-family: $second-font-family;
+  font-size: rem(22);
+  font-weight: 600;
+  line-height: 44px;
+  margin-right: rem(32);
+}
+.footer__small {
+  font-family: $second-font-family;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.footer__tel {
+  font-family: $second-font-family;
+  font-size: rem(22);
+  font-weight: 600;
+  line-height: 44px;
+  display: inline-block;
+}
+
+.footer__button {
+  max-width: rem(200);
+  width: 100%;
+}
+.footer__contact-button {
+}
+.footer__copyright {
+  font-family: $second-font-family;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  background: $navy;
+  color: #fff;
+}

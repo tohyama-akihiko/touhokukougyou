@@ -1,0 +1,242 @@
+@use "global" as *;
+
+.applicant {
+  padding: rem(32) 0;
+  @include mq('md') {
+    padding: rem(64) 0;
+  }
+}
+.applicant__media01 {
+  
+  @include mq('md') {
+    display: flex;
+  max-width: rem(1140);
+  margin: 0 auto;
+  gap: rem(24);
+  }
+}
+.applicant__content {
+
+}
+.applicant__title {
+
+}
+.applicant__wrap {
+
+}
+.applicant__text {
+  margin-top: rem(16);
+font-size: rem(16);
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.05em;
+text-align: left;
+@include mq('md') {
+  margin-top: rem(32);
+}
+
+}
+.applicant__text-bold {
+  margin-top: rem(16);
+font-size: rem(16);
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.05em;
+text-align: left;
+@include mq('md') {
+  margin-top: rem(32);
+}
+
+}
+.applicant__image-container {
+  max-width: rem(558);
+  margin-top: rem(32);
+  @include mq('md') {
+    margin-top: unset;
+  }
+}
+.applicant__image {
+  border-radius: 16px;
+  aspect-ratio: 558/558;
+  object-fit: cover;
+  height: 100%;
+}
+.company-info {
+  background: $bg;
+  padding: rem(32) 0;
+  position: relative;
+  @include mq('md') {
+    padding: rem(64) 0;
+  }
+}
+.company-info__media {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: rem(1140);
+  margin: 0 auto;
+  @include mq('md') {
+    gap: rem(64);
+    flex-direction: unset;
+  }
+}
+.company-info__image-container {
+  max-width: rem(558);
+  margin-top: rem(32);
+  @include mq('md') {
+    margin-top: unset;
+  }
+}
+.company-info__image {
+  border-radius: 16px;
+  aspect-ratio: 558/558;
+  object-fit: cover;
+  height: 100%;
+}
+.company-info__content {
+  max-width: rem(538);
+}
+.company-info__title {
+}
+.company-info__text-red {
+  color: $red;
+font-size: rem(24);
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+margin-top: rem(16);
+@include mq('md') {
+  margin-top: rem(32);
+}
+
+}
+.company-info__text {
+font-size: rem（16;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.05em;
+text-align: left;
+margin-top: rem(16);
+@include mq('md') {
+  margin-top: rem(32);
+}
+
+
+}
+
+.box-page04 {
+  left: -1rem;
+  margin: 0 auto;
+  position: absolute;
+  right: 0%;
+  width: 35%;
+  top: 78%;
+  @include mq('md') {
+    left: -1rem;
+  margin: 0 auto;
+  position: absolute;
+  right: 0%;
+  width: 17%;
+  top: unset;
+  }
+}
+.page-recruit {
+  padding: rem(64) 0 rem(32) 0 ;
+  @include mq('md') {
+    padding: rem(128) 0 rem(64) 0 ;
+  }
+}
+
+
+.youth-certification {
+  padding: rem(32) 0;
+  @include mq('md') {
+    padding: rem(64) 0;
+  }
+}
+.youth-certification__content {
+  max-width: rem(1000);
+  margin: 0 auto;
+  padding: rem(16) rem(24);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: rem(32);
+  border: 1px solid $navy;
+  border-radius: 16px;
+  @include mq('md') {
+    flex-direction: unset;
+    padding: rem(32) rem(48);
+    gap: rem(64);
+  }
+
+}
+.youth-certification__logo {
+  aspect-ratio:180/180 ;
+  object-fit: cover;
+  height: 100%;
+  max-width: rem(180);
+
+}
+.youth-certification__details {
+}
+.youth-certification__title {
+font-size: rem(20);
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+@include mq('md') {
+  text-align: left;
+  font-size: rem(24);
+}
+
+}
+.youth-certification__description {
+font-size: rem(16);
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.05em;
+text-align: left;
+margin-top: rem(24);
+}
+
+.recruitment {
+  padding: rem(32) 0 rem(64) 0;
+  @include mq('md') {
+    padding: rem(64) 0 rem(128) 0;
+  }
+}
+.recruitment__header {
+}
+.recruitment__title {
+}
+
+.recruitment__content {
+ max-width: rem(884);
+ margin: 0 auto;
+}
+.recruitment__text {
+font-size: rem(16);
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.05em;
+text-align: left;
+margin-top: rem(16);
+@include mq('md') {
+  margin-top: rem(32);
+}
+}
+
+.recruitment__button {
+  margin: 0 auto;
+  margin-top: rem(32);
+  width: rem(236);
+}
+.recruitment__button a{
+  width: rem(236);
+  max-width: 100%;
+  padding-left: 30%;
+ 
+}
+.company-info__button{
+  margin-top: rem(32);
+}
