@@ -123,22 +123,7 @@ margin-top: rem(16);
 
 }
 
-.box-page04 {
-  left: -1rem;
-  margin: 0 auto;
-  position: absolute;
-  right: 0%;
-  width: 35%;
-  top: 78%;
-  @include mq('md') {
-    left: -1rem;
-  margin: 0 auto;
-  position: absolute;
-  right: 0%;
-  width: 17%;
-  top: unset;
-  }
-}
+
 .page-recruit {
   padding: rem(64) 0 rem(32) 0 ;
   @include mq('md') {

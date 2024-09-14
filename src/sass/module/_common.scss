@@ -97,3 +97,33 @@
   width: 20%;
 }
 
+.box-page02{
+  position: absolute;
+  right: 0%;
+  top: -28%;
+  width: 18%;
+}
+
+.box-page03{
+  left: -6%;
+  position: absolute;
+  top: -8%;
+  width: 23%;
+}
+
+.box-page04 {
+  left: -1rem;
+  margin: 0 auto;
+  position: absolute;
+  right: 0%;
+  width: 35%;
+  top: 78%;
+  @include mq('md') {
+    left: -1rem;
+  margin: 0 auto;
+  position: absolute;
+  right: 0%;
+  width: 17%;
+  top: unset;
+  }
+}
