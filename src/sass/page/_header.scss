@@ -1,12 +1,13 @@
 @use "global" as *;
 .header{
+  display: none;
   @include mq('md') {
     position: fixed;
     transition: opacity 0.3s ease-in-out;
     width: 100%;
     background-color: rgba($color: #fff, $alpha: 0.8);
     z-index: 100;
-    
+    display: block;
   }
 }
 .header__inner{

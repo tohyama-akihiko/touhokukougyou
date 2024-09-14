@@ -146,6 +146,12 @@
 
   </div>
 </section>
+<style>
+.header{
+  opacity: 0;
+}
+
+</style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
