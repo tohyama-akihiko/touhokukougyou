@@ -1,87 +1,166 @@
 @use "global" as *;
-
+.faq__header {
+  margin-top: rem(64);
+}
+.faq-slider {
+  margin-top: rem(64);
+}
+.faq-slider .slick-slide {
+  margin-left: 16px;
+}
 /* アコーディオン */
-
-.faq__title{
-	width: 25%;
-	margin: 0 auto;
-	margin-top: 5%;
-	margin-bottom: 4%;
+.accordion-wrap {
+  padding: 0 rem(20);
 }
-.accordion-area{
-	max-width: 688px;
-	width: 91%;
-	margin: 0 auto;
-	padding-bottom: 10%;
+.accordion-area {
+  max-width: 946px;
+  margin: 0 auto;
+  margin-top: rem(64);
+  margin-bottom: rem(64);
 }
-.accordion-title{
-	margin-top: -3px;
-	padding: 16px 0;
+.accordion {
+  padding: rem(16) 0;
+  margin-top: rem(64);
 }
-.accordion-title p{
-font-family: Yu Gothic;
-font-size: clamp(10px, 3.2vw, 24px); 
-font-weight: 700;
-line-height: 150%;
-color: #fff;
-padding-left: 4%;
+.accordion-title {
+  position: relative;
+  max-width: rem(795);
 }
-.accordion-box{
-	
-}
-.accordion-box-last{
-	border-bottom:1px solid #42210B;
-}
-.accordion-box p{
-	color: #606060;
-	font-family: Yu Gothic;
-	font-size: clamp(10px, 3.2vw, 24px); 
-font-weight: 500;
-line-height: 170%;
-padding-left: 4%;
-padding-right: 4%;
-
+.accordion-title p::before {
+  position: absolute;
+  content: "";
+  top: 42%;
+  left: rem(-30);
+  width: rem(32);
+  height: rem(22);
+  background: url(../images/faq/arrow-q.png) no-repeat center center / contain;
 }
 
+.accordion-title p {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: rem(40);
+  letter-spacing: 0.05em;
+  text-align: left;
+  border-radius: 16px;
+  padding: rem(32);
+  background: #eef1ff;
+  display: inline-flex;
+}
+.accordion-box {
+  margin-top: rem(16);
+  position: relative;
+  margin-right: rem(30);
+  max-width: rem(752);
+  margin-left: auto;
+}
+.accordion-box::before {
+  position: absolute;
+  content: "";
+  top: 42%;
+  right: rem(-30);
+  width: rem(32);
+  height: rem(22);
+  background: url(../images/faq/arrow-a.png) no-repeat center center / contain;
+}
+
+.accordion-box p {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: rem(32);
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: rem(32);
+  background: #fff1f1;
+  border-radius: 16px;
+  display: inline-flex;
+}
+
+.question {
+  font-family: $second-font-family;
+  font-size: rem(32);
+  font-weight: 500;
+  line-height: rem(32);
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: $navy;
+  padding-right: rem(16);
+}
+.ball {
+  color: $navy;
+  font-size: rem(24);
+  padding-left: rem(16);
+}
+
+.answer {
+  font-family: $second-font-family;
+  font-size: rem(32);
+  font-weight: 500;
+  line-height: rem(32);
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: $red;
+  padding-right: rem(16);
+}
 
 /*アイコンの＋と×*/
-.title {
-	position: relative;
+.title .ball {
+  position: relative;
+  display: inline-block;
 }
-.title::before,
-.title::after{
-    position: absolute;
-    content:'';
-    width: 15px;
-    height: 2px;
-    background-color: #fff;
-		transition: all 0.3s;
-    
+.title .ball::before,
+.title .ball::after {
+  position: absolute;
+  content: "";
+  width: rem(13);
+  height: rem(2);
+  background-color: #fff;
+  transition: all 0.3s;
 }
-.title::before{
-    top:48%;
-    right: 5%;
-    transform: rotate(0deg);
-    
+.title .ball::before {
+  top: rem(19);
+  right: rem(6);
+  transform: rotate(0deg);
+  @include mq("md") {
+    right: rem(7);
+    top: rem(20);
+  }
 }
-.title::after{    
-    top:48%;
-    right: 5%;
-    transform: rotate(90deg);
-
+.title .ball::after {
+  top: rem(19);
+  right: rem(6);
+  transform: rotate(270deg);
+  @include mq("md") {
+    right: rem(7);
+    top: rem(20);
+  }
 }
 /*　closeというクラスがついたら形状変化　*/
-.title.close::before{
-	transform: rotate(0deg);
+.title.close {
+  .ball::before {
+    transform: rotate(0deg);
+  }
 }
 
-.title.close::after{
-	transform: rotate(0deg);
+.title.close {
+  .ball::after {
+    transform: rotate(0deg);
+  }
 }
-
-
 
 /*アコーディオンで現れるエリア*/
 .box {
-	display: none;/*はじめは非表示*/
+  display: none; /*はじめは非表示*/
+}
+
+.know-more {
+  position: relative;
+  padding: rem(64) 0;
+}
+
+.know-more__header {
+}
+.know-more__title {
+}
+.page__h2 {
 }
