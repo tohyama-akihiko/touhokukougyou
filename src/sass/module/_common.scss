@@ -1,76 +1,74 @@
 @use "global" as *;
-.pc-none{
+.pc-none {
   display: block;
-  @include mq('md') {
+  @include mq("md") {
     display: none;
   }
-  }
-  .sp-none{
-    display: none;
-    @include mq('md') {
-      display: block;
-    }
-  }
-
-.button{
-  position: relative;
-  
 }
-.button__link::before{
+.sp-none {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.button {
+  position: relative;
+}
+.button__link::before {
   content: "";
   position: absolute;
   top: 30%;
   right: 17%;
   width: 22px;
   height: 22px;
-  background:url(../images/top/arrow01.svg) no-repeat center center /contain;
+  background: url(../images/top/arrow01.svg) no-repeat center center / contain;
   border-radius: 8px;
   transition: 0.3s;
-  
 }
 
 .hero-button__link {
- background-color: $navy;
- border-radius: 8px;
- color: #fff;
- font-size: rem(16);
- font-weight: 500;
- display: block;
- padding: rem(16) rem(32);
- letter-spacing: 0.8px;
- position: relative;
- max-width: rem(167);
- text-align: center;
- transition: all 0.3s;
- &:hover{
-    color:$navy;
+  background-color: $navy;
+  border-radius: 8px;
+  color: #fff;
+  font-size: rem(16);
+  font-weight: 500;
+  display: block;
+  padding: rem(16) rem(32);
+  letter-spacing: 0.8px;
+  position: relative;
+  max-width: rem(167);
+  text-align: center;
+  transition: all 0.3s;
+  &:hover {
+    color: $navy;
     background-color: #fff;
     border: 1px solid $navy;
- }
+  }
 }
 .button__link {
- background-color: $navy;
- max-width: rem(200);
- border-radius: 8px;
- color: #fff;
- font-size: rem(16);
- font-weight: 500;
- display: block;
- padding: rem(16) 0 rem(16) rem(36);
- letter-spacing: 0.8px;
- position: relative;
- transition: all 0.3s;
- &:hover{
-  color:$navy;
-  background-color: #fff;
-  border: 1px solid $navy;
-  &::before{
-    right: 13%;
-}
-}
+  background-color: $navy;
+  max-width: rem(200);
+  border-radius: 8px;
+  color: #fff;
+  font-size: rem(16);
+  font-weight: 500;
+  display: block;
+  padding: rem(16) 0 rem(16) rem(36);
+  letter-spacing: 0.8px;
+  position: relative;
+  transition: all 0.3s;
+  &:hover {
+    color: $navy;
+    background-color: #fff;
+    border: 1px solid $navy;
+    &::before {
+      right: 13%;
+    }
+  }
 }
 .section-title {
-  font-family:$second-font-family;
+  font-family: $second-font-family;
   font-size: rem(56);
   font-weight: 500;
   letter-spacing: 6.1px;
@@ -85,10 +83,29 @@
   color: $red;
 }
 
-.slick-arrow{
+.slick-arrow {
   display: none !important;
 }
+.page__h2 {
+  font-size: rem(32);
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
 
+.page__header-text {
+  max-width: rem(479);
+  margin-top: ren(32);
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
 .box-page01 {
   left: -1%;
   margin: 0 auto;
@@ -97,14 +114,14 @@
   width: 20%;
 }
 
-.box-page02{
+.box-page02 {
   position: absolute;
   right: 0%;
   top: -28%;
   width: 18%;
 }
 
-.box-page03{
+.box-page03 {
   left: -6%;
   position: absolute;
   top: -8%;
@@ -118,12 +135,12 @@
   right: 0%;
   width: 35%;
   top: 78%;
-  @include mq('md') {
+  @include mq("md") {
     left: -1rem;
-  margin: 0 auto;
-  position: absolute;
-  right: 0%;
-  width: 17%;
-  top: unset;
+    margin: 0 auto;
+    position: absolute;
+    right: 0%;
+    width: 17%;
+    top: unset;
   }
 }
