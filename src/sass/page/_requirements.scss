@@ -1,0 +1,309 @@
+@use "global" as *;
+
+.requirements__header {
+  position: relative;
+}
+
+.requirements__header-image {
+  aspect-ratio: 1280 / 958;
+  object-fit: cover;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.requirements__header-image img {
+  height: 100%;
+}
+
+.merit {
+  padding: rem(32) 0 rem(64);
+
+  @include mq('md') {
+    padding: rem(64) 0 rem(128);
+  }
+}
+
+.merit__list {
+  margin-top: rem(42);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(16);
+
+  @include mq('md') {
+    margin-top: rem(64);
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(24);
+  }
+}
+
+.merit__item {
+  padding: rem(20);
+  border-radius: rem(16);
+  background-color: rgba(255, 255, 255, 0.9);
+
+  @include mq('md') {
+    padding: rem(32);
+  }
+}
+
+.merit__order {
+  font-family: $second-font-family;
+  font-size: rem(65);
+  color: $red;
+  text-align: center;
+
+  @include mq('md') {
+    font-size: rem(100);
+    font-weight: 200;
+    line-height: 1;
+  }
+}
+
+.merit__summary {
+  font-size: rem(20);
+  font-weight: 500;
+  color: $navy;
+
+  @include mq('md') {
+    margin-top: rem(8);
+    font-size: rem(28);
+    font-weight: $bold;
+  }
+}
+
+.merit__text {
+  margin-top: rem(14);
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: 2;
+  color: #333;
+
+  @include mq('md') {
+    margin-top: rem(17);
+  }
+}
+
+.requirements {
+  position: relative;
+  overflow-x: clip;
+  padding: rem(32) 0;
+  background: $bg;
+
+  @include mq('md') {
+    padding: rem(64) 0;
+  }
+}
+
+.requirements__content {
+  max-width: rem(1140);
+  margin: 0 auto;
+  padding: rem(32) rem(20);
+  margin-top: rem(30);
+  position: relative;
+  z-index: 1;
+
+  @include mq('md') {
+    padding: 0 rem(97);
+  }
+}
+
+.requirements__list {
+  padding: rem(64) rem(49) rem(64) rem(64);
+  border-radius: rem(16);
+  background-color: $white;
+}
+
+.requirements__item {
+  display: block;
+  padding: rem(32) 0;
+  border-bottom: 1px solid #c9c9c9;
+
+  @include mq('md') {
+    display: flex;
+  }
+}
+
+.requirements__term {
+  padding-left: rem(20);
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #242424;
+  text-align: left;
+  width: 100%;
+
+  @include mq('md') {
+    padding-left: rem(32);
+    width: 20%;
+  }
+}
+
+.requirements__description {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #242424;
+  text-align: left;
+}
+
+.occupation {
+  padding: rem(32) 0;
+  position: relative;
+
+  @include mq('md') {
+    padding: rem(64) 0;
+  }
+}
+
+.occupation__content {
+  max-width: rem(1140);
+  margin: rem(20) auto 0;
+  padding: rem(32) rem(20);
+
+  @include mq('md') {
+    padding: 0 rem(97);
+    margin-top: rem(32);
+  }
+}
+
+.occupation__list {
+  max-width: rem(946);
+  margin: 0 auto;
+}
+
+.occupation__item {
+  display: flex;
+  align-items: center;
+  gap: rem(17);
+  padding: 32px;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.occupation__item:first-child {
+  margin-top: rem(0);
+}
+
+.occupation__tag {
+  background: #fff;
+  border-radius: 4px;
+  width: rem(113);
+  font-size: rem(14);
+  font-weight: 500;
+  text-align: center;
+}
+
+.occupation__tag.navy {
+  color: $navy;
+  border: 1px solid $navy;
+}
+
+.occupation__tag.green {
+  color: #0B8A27;
+  border: 1px solid #0B8A27;
+}
+
+.occupation__post {
+  font-size: rem(16);
+  letter-spacing: 0.8px;
+  color: #242424;
+  font-weight: 400;
+}
+
+.occupation__status {
+  font-size: rem(16);
+  letter-spacing: 0;
+  color: #868686;
+  font-weight: $bold;
+}
+
+.occupation__status.red {
+  color: $red;
+}
+
+.occupation__more {
+  max-width: rem(200);
+  margin: 0 auto;
+  margin-top: rem(96);
+}
+
+.button__link--occupation::before {
+  right: 15%;
+}
+
+.more-touhokukougyo {
+  padding: rem(32) 0;
+  position: relative;
+  overflow-x: clip;
+
+  @include mq('md') {
+    padding: rem(64) 0;
+  }
+}
+
+.contact {
+  padding: rem(85) 0;
+  position: relative;
+
+  @include mq('md') {
+    padding: rem(128) 0;
+  }
+}
+
+.contact__content {
+  border-radius: rem(16);
+  background-image: url(../images/common/contact_back-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq('md') {
+    padding: rem(48) rem(48) rem(64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contact__text-wrap {
+  max-width: rem(524);
+  color: $white;
+}
+
+.contact__title {
+  font-family: $second-font-family;
+  font-size: rem(36);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1em;
+
+  @include mq('md') {
+    font-size: rem(56);
+    font-weight: 600;
+  }
+}
+
+.contact__message {
+  font-size: rem(18);
+  font-weight: 500;
+
+  @include mq('md') {
+    margin-top: rem(8);
+    font-size: rem(20);
+    font-weight: $bold;
+  }
+}
+
+.contact__text {
+  margin-top: rem(8);
+  font-size: rem(16);
+  font-weight: $normal;
+}
+
+.contact__button {
+  max-width: rem(200);
+  width: 100%;
+}
