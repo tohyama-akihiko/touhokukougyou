@@ -87,4 +87,13 @@ $('.title').on('click', function() {//タイトル要素をクリックしたら
   });
   
   var rellax = new Rellax(".js-rellax");
+
+  // タブ
+  $('.js-tab-menu').on('click', function () {
+    $('.js-tab-menu').removeClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
+    $(this).addClass('is-active');
+    var number = $(this).data("number");
+    $('#' + number).addClass('is-active');
+  });
 });
