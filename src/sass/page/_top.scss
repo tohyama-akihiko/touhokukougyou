@@ -234,15 +234,15 @@
   display: flex;
   flex-direction: column;
   gap: rem(24);
-  max-width: rem(1140);
-  margin: 0 auto;
-  margin-top: rem(80);
+  max-width: rem(600);
+  margin: rem(40) auto 0;
   @include mq('md') {
     flex-direction: unset;
+    max-width: rem(1140);
+    margin-top: rem(65);
   }
 }
 .recruit__item {
-  max-width: rem(364);
   display: block;
   position: relative;
   overflow: hidden;
@@ -251,6 +251,10 @@
     .recruit__image{
       transform: scale(1.2);
     }
+  }
+  @include mq('md') {
+    max-width: rem(364);
+
   }
 }
 .recruit__image {
@@ -266,7 +270,7 @@
   right: 0;
   margin: 0 auto;
   color: #fff;
-  top: 36%;
+  top: 40%;
   font-size: rem(24);
   font-weight: 700;
   line-height: 36px;
